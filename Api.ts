@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express(); 
+const port = process.env.PORT || 3001
 
 app.get('/api/alumnos', (req, res) => {
     const alumnos = ["Óscar Cruañas", "Satenik Avetisyan", 
